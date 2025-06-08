@@ -44,3 +44,53 @@ This project simulates a road-crossing scenario in Webots with three E-puck robo
 │   └── zebra_crossing.wbt           # Webots world file
 │
 ├── README.md
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Before running the simulation, install the following:
+
+- [Webots](https://cyberbotics.com/) (R2023b or later)  
+- Python 3.7+  
+- Required Python libraries:
+
+```bash
+pip install numpy
+
+```
+
+
+### Running the Simulation
+
+Clone the Repository
+Open a terminal and run:
+```bash
+git clone https://github.com/yourusername/epuck-warden.git
+cd epuck-warden
+```
+
+Open the Project in Webots
+- Launch Webots
+- Open the world file:
+		worlds/zebra_crossing.wbt
+
+Assign Controllers to Robots
+- Assign pedestrian_controller to PEDESTRIAN1 and PEDESTRIAN2
+- Assign warden_supervisor to WARDEN
+
+
+Run the Simulation
+- Click the green Play button
+- Watch the warden robot assist stuck pedestrians in real time
+
+
+## 🔍 Future Improvements
+
+- Replace static “stuck” logic with real IR sensor-based detection
+- Add deep learning for real-time pedestrian recognition
+- Improve navigation with advanced path planners (e.g., D* Lite, RRT)
+- Introduce smart traffic light control and vehicle avoidance
