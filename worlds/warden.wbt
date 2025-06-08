@@ -1,0 +1,209 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "../protos/E-puck.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.505534800752059 -0.5093421242469346 -0.6964231226030595 4.36528063518383
+  position 0.03672439484249586 -0.6068838244481812 1.9978107851516431
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 0.8 0.8
+  floorTileSize 0.2 0.2
+  floorAppearance PBRAppearance {
+    baseColor 0 0 0
+  }
+  wallHeight 0.001
+  wallAppearance NULL
+}
+DEF WARDEN_WITH_CAMERA E-puck {
+  hidden rotation_1 0 1 0 2.9802322387695313e-08
+  hidden rotation_2 0 1 0 2.9802322387695313e-08
+  translation 0.39998630417269365 0.35000000000021886 0.0009371460416465992
+  rotation 4.572351553691169e-08 -0.9999999999999989 6.758849490692515e-09 0.04162604129426833
+  name "warden_camera"
+  controller "wardencamera"
+  camera_recognition Recognition {
+    maxRange 126
+  }
+  camera_fieldOfView 1.57
+  camera_width 64
+  camera_height 56
+}
+DEF PEDESTRIAN2 E-puck {
+  translation -0.346938 0.152938 -6.39568e-05
+  rotation 7.570530357962853e-07 0.9999999906000641 0.00013711053447404382 0.0010100582736078585
+  name "pedestrian2"
+  controller "pedestrian2"
+  kinematic TRUE
+  extensionSlot1 [
+    GPS {
+      name "pedestrian2_gps"
+    }
+  ]
+}
+DEF PEDESTRIAN1 E-puck {
+  hidden position_0_0 19.760798683097804
+  hidden position_0_1 19.76079868309096
+  hidden rotation_1 0 -1 0 5.371942545620542
+  hidden rotation_2 0 -1 0 5.371942545627385
+  translation -0.346938 0.249296 -6.39625e-05
+  rotation 8.233670455426395e-06 0.9999998867810995 -0.0004757835590177963 0.00018278609976071075
+  name "pedestrian1"
+  controller "pedestrian1"
+  extensionSlot1 [
+    GPS {
+      name "pedestrian1_gps"
+    }
+  ]
+}
+DEF WARDEN E-puck {
+  hidden position_0_0 364.63633669230353
+  hidden position_0_1 364.6363366271113
+  hidden rotation_1 0 0.9999999999999999 0 0.2115888758875141
+  hidden rotation_2 0 1 0 0.21158881069527627
+  translation -0.251428 -0.342952 0.000378032
+  rotation 0.01073281794509944 -0.010732806949116599 0.9998848001014667 1.5704973107964315
+  name "warden"
+  controller "warden"
+  supervisor TRUE
+  extensionSlot1 [
+    InertialUnit {
+      name "warden_inertialunit"
+    }
+  ]
+  extensionSlot2 [
+    GPS {
+      name "warden_gps"
+    }
+  ]
+}
+DEF RESCUE_LIGHT Pose {
+  translation 0.3 0.01 0
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 0 0
+          emissiveColor 1 0 0
+        }
+      }
+      geometry Box {
+        size 0.001 0.001 0.001
+      }
+    }
+  ]
+}
+DEF ZEBRAA_CROSS_1 Pose {
+  translation -0.3 0.2 0
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.07 0.4 0.0001
+      }
+    }
+  ]
+}
+DEF ZEBRAA_CROSS_2 Pose {
+  translation -0.2 0.2 0
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.07 0.4 0.0001
+      }
+    }
+  ]
+}
+DEF ZEBRAA_CROSS_3 Pose {
+  translation -0.1 0.2 0
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.07 0.4 0.0001
+      }
+    }
+  ]
+}
+DEF ZEBRAA_CROSS_4 Pose {
+  translation 0 0.2 0
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.07 0.4 0.0001
+      }
+    }
+  ]
+}
+DEF ZEBRAA_CROSS_5 Pose {
+  translation 0.1 0.2 0
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.07 0.4 0.0001
+      }
+    }
+  ]
+}
+DEF ZEBRAA_CROSS_6 Pose {
+  translation 0.2 0.2 0
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.07 0.4 0.0001
+      }
+    }
+  ]
+}
+DEF ZEBRAA_CROSS_7 Pose {
+  translation 0.3 0.2 0
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.07 0.4 0.0001
+      }
+    }
+  ]
+}
